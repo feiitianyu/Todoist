@@ -1,0 +1,21 @@
+.navlist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(219, 76, 63);
+    height: 40px;
+    padding: 0 15px;
+}
+
+.navlist-left {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding-right: 20%;
+}
+
+.navlist-right {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
