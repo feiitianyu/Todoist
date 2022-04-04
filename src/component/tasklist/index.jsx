@@ -47,7 +47,7 @@ const TaskList = () => {
                                 <Radio onChange={() => setTaskLisT(taskList.filter((i) => i.id !== task.id))}>
                                     <span>{task.content}</span><br />
                                     <CreditCardOutlined />
-                                    <span style={{marginLeft: 5, fontSize: 14}}>{task.date._i}</span>
+                                    <span style={{ marginLeft: 5, fontSize: 14, color: 'gray' }}>{`${new Date(task.date._i).getMonth()+1}月${new Date(task.date._i).getDate()}日`}</span>
                                 </Radio>
                                 <Divider />
                             </div>
@@ -56,7 +56,7 @@ const TaskList = () => {
                 </>
                 <div className='add-task' onClick={() => setIsShow(true)} style={{ display: isShow ? 'none' : 'block' }} >
                     <PlusOutlined />
-                    <span style={{marginLeft: 5, fontSize: 14}}>添加任务</span>
+                    <span style={{ marginLeft: 5, fontSize: 14 }}>添加任务</span>
                 </div>
             </div>
             <div style={{ display: isShow ? 'block' : 'none' }}>
